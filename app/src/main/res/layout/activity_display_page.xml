@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.stellersoft.xkcdbrowser.DisplayPage"
+    android:padding="0dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/xk_loading"
+        android:id="@+id/titleTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="30sp" />
+
+    <com.stellerapps.xkcdlite.TouchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/xkcdImgIV"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="60dp" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:id="@+id/displayTableRow">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/leftB"
+            android:src="@drawable/left"
+            android:background="#0049ff0e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="navLeft" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rightB"
+            android:src="@drawable/right"
+            android:background="#0049ff0e"
+            android:layout_marginLeft="10dp"
+            android:onClick="navRight" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/randB"
+            android:src="@drawable/rand"
+            android:background="#0049ff0e"
+            android:layout_marginLeft="10dp"
+            android:onClick="rand"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/favB"
+            android:src="@drawable/favb"
+            android:background="#0049ff0e"
+            android:layout_marginLeft="10dp"
+            android:onClick="addFav"/>
+
+    </TableRow>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuB"
+        android:src="@drawable/menu"
+        android:background="#0049ff0e"
+        android:onClick="showMenu"
+        android:layout_alignBottom="@+id/displayTableRow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>

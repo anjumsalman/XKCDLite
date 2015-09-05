@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stellerapps.xkcdlite" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LaunchPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayPage"
+            android:label="@string/title_activity_display_page" >
+        </activity>
+        <activity
+            android:name=".ExplainPage"
+            android:label="@string/xk_title_activity_explain_page"
+            android:parentActivityName=".DisplayPage">
+        </activity>
+        <activity
+            android:name=".ProgressPage"
+            android:label="@string/title_activity_progress_page"
+            android:parentActivityName=".LaunchPage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stellerapps.xkcdlite.LaunchPage" />
+        </activity>
+        <activity
+            android:name=".AboutPage"
+            android:label="@string/title_activity_about_page"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".LaunchPage">
+        </activity>
+        <activity
+            android:name=".Stash"
+            android:label="@string/title_activity_stash"
+            android:parentActivityName=".LaunchPage">
+        </activity>
+        <activity
+            android:name=".FavPage"
+            android:label="@string/title_activity_fav_page"
+            android:parentActivityName=".LaunchPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stellerapps.xkcdlite.LaunchPage" />
+        </activity>
+        <activity
+            android:name=".DisplayStashed"
+            android:label="@string/title_activity_display_stashed"
+            android:parentActivityName=".Stash" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.stellerapps.xkcdlite.Stash" />
+        </activity>
+    </application>
+
+</manifest>

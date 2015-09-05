@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".LaunchPage"
+    android:id="@+id/rLLaunch"
+    android:background="@drawable/appbg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xk_browse"
+        android:id="@+id/browseTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="40sp"
+        android:onClick="browseXK"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xk_fav"
+        android:id="@+id/favsTV"
+        android:layout_below="@+id/browseTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="40sp"
+        android:onClick="favsXK"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xk_progress"
+        android:id="@+id/progressTV"
+        android:layout_below="@+id/favsTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="40sp"
+        android:onClick="progressXK"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xk_stash"
+        android:id="@+id/stashTV"
+        android:layout_below="@+id/progressTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="40sp"
+        android:onClick="stashXK"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="20dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuB"
+        android:src="@drawable/menu"
+        android:background="#0049ff0e"
+        android:onClick="showMenu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>
